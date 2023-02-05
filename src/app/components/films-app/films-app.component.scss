@@ -1,0 +1,52 @@
+
+.films-app-block{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    .container{
+        width: 99%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+       
+
+        .filmList{
+            display: flex;
+            justify-content: space-around;
+            
+            
+        }
+    }
+}
+
+@media (max-width: 1050px){
+
+
+.films-app-block{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    .container{
+        width: 99%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+       
+
+        .filmList{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+    }
+}
+
+}
