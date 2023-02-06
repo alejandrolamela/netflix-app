@@ -1,8 +1,15 @@
+<div class="search-container">
+    <label>Buscador: </label>
+    <input #buscador (input)="buscar(buscador.value)" />
+</div>
+
+
+
 <div class="films-app-block">
     <div class="container">
         <p>{{films[0].section}}</p>
         <div class="filmList">
-            <div *ngFor="let film of films">
+            <div *ngFor="let film of moviesFiltered">
                 <img src="{{film.image}}" alt="{{film.title}}">
             </div>
         </div>

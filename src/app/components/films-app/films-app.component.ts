@@ -8,6 +8,20 @@ import { Component, Input } from '@angular/core';
 export class FilmsAppComponent {
 
   @Input() public films!: any;
- 
+
+  @Input() public moviesFiltered!: any;
+
+  
+
+  ngOnInit() {
+    this.moviesFiltered = [...this.films];
+  }
+
+
+  buscar(value: string): void {
+    
+        this.moviesFiltered = this.films.filter((film: any) => film.title.includes(value));
+   
+      }
 
 }

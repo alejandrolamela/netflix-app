@@ -1,3 +1,4 @@
+import { IFilms } from './models/ifilms';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,7 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'netflix-app';
-  public top5 = [
+  public top5: IFilms[] = [
+    
     {
       position:1,
       title:'La casa de papel',
@@ -35,12 +37,13 @@ export class AppComponent {
     }
   ];
   
-  public comedyFilms = [
-    {section: 'COMEDIA'},
+  public comedyFilms: IFilms[] = [
+    
     {
       position:1,
       title:'Casi 300',
       image:'../../assets/Comedia/casi300.webp',
+      section: 'COMEDIA'
     },
     {
       position:2,
@@ -64,12 +67,13 @@ export class AppComponent {
     }
   ]
 
-  public dramaFilms = [
-    {section: 'DRAMA'},
+  public dramaFilms : IFilms[]= [
+    
     {
       position:1,
       title:'1917',
       image:'../../assets/Drama/1917.webp',
+      section: 'DRAMA'
     },
     {
       position:2,
@@ -93,12 +97,13 @@ export class AppComponent {
     }
   ];
 
-  public actionFilms = [
-    {section: 'ACTION'},
+  public actionFilms : IFilms[]= [
+    
     {
       position:1,
       title:'Ejercito de muertos',
       image:'../../assets/Accion/ejercitomuertos.jpg',
+      section: 'ACTION'
     },
     {
       position:2,
